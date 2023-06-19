@@ -1,0 +1,93 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.watches-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.watches {
+  width: 200px;
+  position: relative;
+}
+
+.city {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid black;
+  border-radius: 50%;
+
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hand {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  transform: rotate(180deg);
+  transform-origin: center top;
+}
+
+.hour {
+  width: 4px;
+  height: 30%;
+  left: calc(50% - 2px);
+}
+
+.minute {
+  width: 2px;
+  height: 40%;
+  left: calc(50% - 1px);
+}
+
+.second {
+  width: 1px;
+  height: 50%;
+  left: 50%;
+}
+
+.form {
+  display: flex;
+  gap: 10px;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.form__label {
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
